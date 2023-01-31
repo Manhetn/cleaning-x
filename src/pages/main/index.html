@@ -100,7 +100,7 @@
         <span class="header__cart">
           Cart (<i class="header__cart-counter">0</i>)
         </span>
-        <a class="button header__free-quote-button" role="button">
+        <a class="button header__free-quote-button" href="#request-cleaning-form" role="button">
           Get a free quote
         </a>
       </div>
@@ -115,7 +115,7 @@
             aliquet et nulla magna lacus penatibus.
           </p>
           <div class="welcome__interaction-with-service">
-            <a class="button welcome__free-quote-button" href="#" role="button"
+            <a class="button welcome__free-quote-button" href="#request-cleaning-form" role="button"
               >Get a free quote</a
             >
             <div class="info welcome__phone-info">
@@ -183,7 +183,7 @@
           </li>
         </ol>
         <div class="how-works__buttons">
-          <a class="button how-works__button" href="#" role="button"
+          <a class="button how-works__button" href="#request-cleaning-form" role="button"
             >Get a free quote</a
           >
           <a
@@ -319,7 +319,7 @@
           <div class="about-covid__interaction-with-service">
             <a
               class="button about-covid__free-quote-button"
-              href="#"
+              href="#request-cleaning-form"
               role="button"
               >Get a free quote</a
             >
@@ -360,7 +360,7 @@
           </ul>
           <a
             class="button about-covid__free-quote-button"
-            href="#"
+            href="#request-cleaning-form"
             role="button"
             >Get a free quote</a
           >
@@ -394,7 +394,7 @@
           </ul>
           <a
             class="button about-covid__free-quote-button"
-            href="#"
+            href="#request-cleaning-form"
             role="button"
             >Get a free quote</a
           >
@@ -410,7 +410,7 @@
             </p>
           </div>
           <div class="articles__buttons">
-            <a class="button articles__button" href="#" role="button"
+            <a class="button articles__button" href="#request-cleaning-form" role="button"
               >Get a free quote</a
             >
             <a
@@ -505,7 +505,8 @@
         </div>
         <form
           class="request-cleaning__form form"
-          name="trequest-cleaning"
+          name="request-cleaning"
+          id="request-cleaning-form"
           method="post"
           action="console.log(data)"
         >
@@ -635,13 +636,13 @@
           <p class="footet__text">
             Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do eiusmod.
           </p>
-          <a class="button footer__button-request-quote" href="#" role="button"
+          <a class="button footer__button-request-quote" href="#request-cleaning-form" role="button"
             >Request a free quote</a
           >
         </div>
       </div>
       <div class="footer__additional-content">
-        <a class="header__logo-link" href="index.html" title="go to main page">
+        <a class="header__logo-link" href="#top" title="go to main page">
           <img
             class="header__logo-icon"
             src="<%=require('../../assets/icons/logo.svg')%>"
