@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  background-color: $color-blue;
+  border-radius: calc($radius-base - 2px);
+  color: $color-white;
+  padding: 26px 38px;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  font-weight: $f-weight-bold;
+  border: none;
+  cursor: pointer;
+}
+
+.button--transparent {
+  background: transparent;
+  border: 1px solid $color-gray-light;
+  background-color: $color-white;
+  color: $color-purple;
+  box-shadow: 0px 4px 10px $color-box-shadow;
+}

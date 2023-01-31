@@ -1,0 +1,48 @@
+.no-comparison {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 239px;
+}
+
+.no-comparison::after {
+  display: block;
+  content: '';
+  height: 1px;
+  width: calc(100% - 48px);
+  background-color: $color-gray-inconspicuous;
+}
+
+.no-comparison__text,
+.no-comparison__text {
+  display: inline-block;
+  text-align: center;
+}
+
+.no-comparison__title {
+  max-width: 608px;
+  margin-bottom: 13px;
+}
+
+.no-comparison__text {
+  max-width: 702px;
+  margin-bottom: 32px;
+}
+
+.no-comparison__achievements {
+  max-width: 750px;
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  margin-bottom: 40px;
+}
+
+.no-comparison__video-content {
+  max-width: 1012px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 44.96%;
+  border-radius: 53px;
+  overflow: hidden;
+  margin-bottom: 240px;
+}

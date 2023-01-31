@@ -1,0 +1,80 @@
+.our-differences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding-bottom: 200px;
+  margin-bottom: 239px;
+}
+
+.our-differences::after {
+  display: block;
+  content: '';
+  height: 1px;
+  width: calc(100% - 48px);
+  background-color: $color-gray-inconspicuous;
+}
+
+.our-differences__background {
+  max-width: 1220px;
+  padding: 24px 705px 25px 0;
+  background-image: url(../../assets/images/cleaning-man.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 200px;
+}
+
+.our-differences__title {
+  margin-bottom: 19px;
+}
+
+.our-differences__text {
+  margin-bottom: 15px;
+}
+
+.our-differences__text-small {
+  margin-bottom: 26px;
+  font-size: $fs-small;
+  line-height: $lh-p;
+  max-width: 465px;
+}
+
+.our-differences__differences {
+  max-width: 428px;
+  align-self: stretch;
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// .our-differences__difference {
+// }
+
+.our-differences__difference-title {
+  display: inline-block;
+  align-items: center;
+  display: flex;
+  font-size: calc($fs-h2 + 6px);
+  line-height: calc($lh-h2 + 8px);
+  margin-bottom: 3px;
+}
+
+.our-differences__difference-title::after {
+  display: block;
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-image: url(../../assets/icons/cross.svg);
+}
+
+.our-differences__difference-subtitle {
+  font-size: $fs-base;
+  line-height: calc($lh-base + 4px);
+  color: #6e7191;
+}
+
+.request-cleaning__form {
+  max-width: 673px;
+}

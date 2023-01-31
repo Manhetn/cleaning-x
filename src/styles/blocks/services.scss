@@ -1,0 +1,25 @@
+.services {
+  margin-bottom: 240px;
+}
+
+.services__top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px 62px 24px;
+}
+
+.services__title {
+  display: inline-block;
+  max-width: 475px;
+}
+
+.services__articles {
+  display: flex;
+  gap: 28px;
+  margin: 0 24px;
+}
+
+.services__button {
+  font-weight: $f-weight-normal;
+}

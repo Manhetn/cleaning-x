@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%=require('../../assets/images/favicon/favicon-32x32.png')%>"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="<%=require('../../assets/images/favicon/favicon-96x96.png')%>"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="<%=require('../../assets/images/favicon/favicon-16x16.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="<%=require('../../assets/images/favicon/apple-icon-57x57.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="<%=require('../../assets/images/favicon/apple-icon-60x60.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="<%=require('../../assets/images/favicon/apple-icon-72x72.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="<%=require('../../assets/images/favicon/apple-icon-76x76.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="<%=require('../../assets/images/favicon/apple-icon-114x114.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="<%=require('../../assets/images/favicon/apple-icon-120x120.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="<%=require('../../assets/images/favicon/apple-icon-144x144.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="<%=require('../../assets/images/favicon/apple-icon-152x152.png')%>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="<%=require('../../assets/images/favicon/apple-icon-180x180.png')%>"
+    /> -->
+    <title>Cleaning-X</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo-link" href="index.html" title="go to main page">
+          <img
+            class="header__logo-icon"
+            src="<%=require('../../assets/icons/logo.svg')%>"
+            alt="logo"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#" title="Home">Home</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#" title="About">About</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#" title="Services">Services</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#" title="Pages">Pages</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="header__cart">
+          Cart (<i class="header__cart-counter">0</i>)
+        </span>
+        <a class="button header__free-quote-button" role="button">
+          Get a free quote
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="welcome">
+        <div class="welcome__content">
+          <h1 class="welcome__title">Quality cleaning for your home</h1>
+          <p class="welcome__text">
+            Condimentum mauris sit cursus amet id non neque pharetra nulla
+            ornare sed facilisis senectus dapibus nibh ultrices eget suscipit
+            aliquet et nulla magna lacus penatibus.
+          </p>
+          <div class="welcome__interaction-with-service">
+            <a class="button welcome__free-quote-button" href="#" role="button"
+              >Get a free quote</a
+            >
+            <div class="info welcome__phone-info">
+              <img
+                class="info__icon"
+                src="<%=require('../../assets/icons/handset.svg')%>"
+                alt="phone handset"
+                loading="lazy"
+              />
+              <div class="info__content">
+                <h6 class="info__subtitle">Call us now</h6>
+                <h3 class="info__title">(414) 567 - 2109</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-works">
+        <h2 class="how-works__title">How our service works?</h2>
+        <p class="how-works__text">
+          Sagittis nibh scelerisque vitae eget vulputate sem elementum sed neque
+          nisi felis non ultrices massa id egestas quam velit pretium nu.
+        </p>
+        <ol class="how-works__order-points">
+          <li class="how-works__order-point">
+            <img
+              class="how-works__order-point-image"
+              src="<%=require('../../assets/images/calendar.svg')%>"
+              alt="calendar"
+              loading="lazy"
+            />
+            <h4 class="how-works__order-point-title">1. Schedule online</h4>
+            <p class="how-works__order-point-description">
+              Sagittis nibh scelerisque vitae egetolment vulputate sem elementum
+              sed n.
+            </p>
+          </li>
+          <li class="how-works__order-point">
+            <img
+              class="how-works__order-point-image"
+              src="<%=require('../../assets/images/credit-cards.svg')%>"
+              alt="credit cards"
+              loading="lazy"
+            />
+            <h4 class="how-works__order-point-title">2. Pay online easily</h4>
+            <p class="how-works__order-point-description">
+              Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet
+              at nunc.
+            </p>
+          </li>
+          <li class="how-works__order-point">
+            <img
+              class="how-works__order-point-image"
+              src="<%=require('../../assets/images/vacuum-cleaner-bucket.svg')%>"
+              alt="vacuum cleaner bucket"
+              loading="lazy"
+            />
+            <h3 class="how-works__order-point-title">
+              3. Get your house cleaned
+            </h3>
+            <p class="how-works__order-point-description">
+              Nunc maecenas sollicitudin metus tellus mattis sed porttitor
+              cursus eleifend.
+            </p>
+          </li>
+        </ol>
+        <div class="how-works__buttons">
+          <a class="button how-works__button" href="#" role="button"
+            >Get a free quote</a
+          >
+          <a
+            class="button button--transparent how-works__button"
+            href="#"
+            role="button"
+            >Explore services</a
+          >
+        </div>
+      </section>
+      <section class="no-comparison">
+        <h2 class="no-comparison__title">
+          Our cleaning services have no comparison
+        </h2>
+        <p class="no-comparison__text">
+          Lobortis mattis odio leo eget mauris met aliquet semper molestie
+          sollicitudin congue massa mauris lectus vitae cras viverra gravida
+          sapien.
+        </p>
+        <div class="no-comparison__achievements">
+          <div class="info no-comparison__achievement">
+            <img
+              class="info__icon"
+              src="<%=require('../../assets/icons/hearts.svg')%>"
+              alt="phone handset"
+              loading="lazy"
+            />
+            <div class="info__content">
+              <h6 class="info__subtitle">clients</h6>
+              <h3 class="info__title">3,480+</h3>
+            </div>
+          </div>
+          <div class="no-comparison__achievement info">
+            <img
+              class="info__icon"
+              src="<%=require('../../assets/icons/done.svg')%>"
+              alt="phone handset"
+              loading="lazy"
+            />
+            <div class="info__content">
+              <h6 class="info__subtitle">Jobs done</h6>
+              <h3 class="info__title">12,540+</h3>
+            </div>
+          </div>
+          <div class="no-comparison__achievement info">
+            <img
+              class="info__icon"
+              src="<%=require('../../assets/icons/employees.svg')%>"
+              alt="phone handset"
+              loading="lazy"
+            />
+            <div class="info__content">
+              <h6 class="info__subtitle">Employees</h6>
+              <h3 class="info__title">100+</h3>
+            </div>
+          </div>
+        </div>
+        <div class="no-comparison__video-content">
+          <iframe
+            src="https://www.youtube.com/embed/aFnXFXJWjgc"
+            title="''Home Cleaning Guide🧹' for beginner housewives who find it difficult to clean"
+            loading="lazy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services__top-content">
+          <h2 class="services__title">
+            Take a look at our professional services
+          </h2>
+          <a
+            class="button button--transparent services__button"
+            href="#"
+            role="button"
+            >Explore services</a
+          >
+        </div>
+        <div class="services__articles">
+          <article class="services__article service-article">
+            <img
+              class="service-article__image"
+              src="<%=require('../../assets/images/house.svg')%>"
+              alt="House cleaning"
+              loading="lazy"
+            />
+            <h4 class="service-article__title">House cleaning</h4>
+            <p class="service-article__text">
+              Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
+              dalaracc lacus vel facilisis volutpat est.
+            </p>
+          </article>
+          <article class="services__article service-article">
+            <img
+              class="service-article__image"
+              src="<%=require('../../assets/images/office.svg')%>"
+              alt="Office cleaning"
+              loading="lazy"
+            />
+            <h4 class="service-article__title">Office cleaning</h4>
+            <p class="service-article__text">
+              Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
+              dalaracc lacus vel facilisis volutpat est.
+            </p>
+          </article>
+          <article class="services__article service-article">
+            <img
+              class="service-article__image"
+              src="<%=require('../../assets/images/woman-cleaning.svg')%>"
+              alt="House cleaning"
+              loading="lazy"
+            />
+            <h4 class="service-article__title">Industrial cleaning</h4>
+            <p class="service-article__text">
+              Lorem ipsum dolor sit amet consecte tur adipiscing elit semper
+              dalaracc lacus vel facilisis volutpat est.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="about-covid">
+        <div class="about-covid__background">
+          <h6 class="about-covid__subtitle">Covid-19 sanitization</h6>
+          <h2 class="about-covid__title">
+            We follow guidelines to keep you safe from the COVID-19 virus
+          </h2>
+          <p class="about-covid__text">
+            Lobortis mattis odio leo eget mauris met aliquet semper molestie
+            sollicitudin congue massa mauris lectus.
+          </p>
+          <div class="about-covid__interaction-with-service">
+            <a
+              class="button about-covid__free-quote-button"
+              href="#"
+              role="button"
+              >Get a free quote</a
+            >
+            <div class="info info--color-white about-covid__phone-info">
+              <img
+                class="info__icon"
+                src="<%=require('../../assets/icons/handset.svg')%>"
+                alt="phone handset"
+                loading="lazy"
+              />
+              <div class="info__content">
+                <h6 class="info__subtitle">Call us now</h6>
+                <h3 class="info__title">(414) 567 - 2109</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cleaning-area">
+        <div class="cleaning-area__background">
+          <h2 class="cleaning-area__title">
+            We cover all areas of your home or office
+          </h2>
+          <p class="cleaning-area__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <ul class="cleaning-area__areas">
+            <li class="cleaning-area__area">Bathrooms</li>
+            <li class="cleaning-area__area">Bedrooms</li>
+            <li class="cleaning-area__area">Kitchens</li>
+            <li class="cleaning-area__area">Offices</li>
+            <li class="cleaning-area__area">Living Rooms</li>
+            <li class="cleaning-area__area">Businesses</li>
+            <li class="cleaning-area__area">Carpets</li>
+            <li class="cleaning-area__area">Windows</li>
+          </ul>
+          <a
+            class="button about-covid__free-quote-button"
+            href="#"
+            role="button"
+            >Get a free quote</a
+          >
+        </div>
+      </section>
+      <section class="our-differences">
+        <div class="our-differences__background">
+          <h2 class="our-differences__title">What makes us different?</h2>
+          <p class="our-differences__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <small class="our-differences__text-small">
+            Sed ut perspiciatis unde omnis iste natus error sit atem accusantium
+            doloremque laudantiu sed ut.
+          </small>
+          <ul class="our-differences__differences">
+            <li class="our-differences__difference">
+              <h2 class="our-differences__difference-title">10</h2>
+              <h3 class="our-differences__difference-subtitle">Years</h3>
+            </li>
+            <li class="our-differences__difference">
+              <h2 class="our-differences__difference-title">5k</h2>
+              <h3 class="our-differences__difference-subtitle">Clients</h3>
+            </li>
+            <li class="our-differences__difference">
+              <h2 class="our-differences__difference-title">20k</h2>
+              <h3 class="our-differences__difference-subtitle">Jobs done</h3>
+            </li>
+          </ul>
+          <a
+            class="button about-covid__free-quote-button"
+            href="#"
+            role="button"
+            >Get a free quote</a
+          >
+        </div>
+      </section>
+      <section class="articles">
+        <div class="articles__top-content">
+          <div class="articles__content">
+            <h2 class="articles__title">Articles & resources</h2>
+            <p class="articles__text">
+              Lobortis mattis odio leo eget mauris met aliquet semper molestie
+              sollicitudin congue massa mauris lectus.
+            </p>
+          </div>
+          <div class="articles__buttons">
+            <a class="button articles__button" href="#" role="button"
+              >Get a free quote</a
+            >
+            <a
+              class="button button--transparent articles__button"
+              href="#"
+              role="button"
+              >Browse articles</a
+            >
+          </div>
+        </div>
+        <div class="articles__list">
+          <article class="articles__article article">
+            <img
+              class="article__image"
+              src="<%=require('../../assets/images/vacuum-cleaner.svg')%>"
+              alt="Vacuum cleaner"
+              loading="lazy"
+            />
+            <div class="article__content">
+              <h4 class="article__title">
+                8 best vacuum cleaners to clean any mess for your home in 2022
+              </h4>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo
+                quis odio sit sit ac port titor sit males.
+              </p>
+              <div class="article__content-end">
+                <span class="article__data">Jan 28, 2022</span>
+                <a class="article__button" href="#" role="button"></a>
+              </div>
+            </div>
+          </article>
+          <article class="articles__article article">
+            <img
+              class="article__image"
+              src="<%=require('../../assets/images/cleaning-woman.svg')%>"
+              alt="Vacuum cleaner"
+              loading="lazy"
+            />
+            <div class="article__content">
+              <h4 class="article__title">
+                How to properly disinfect your phone and other electronics
+              </h4>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo
+                quis odio sit sit ac port titor sit males.
+              </p>
+              <div class="article__content-end">
+                <span class="article__data">Feb 1, 2022</span>
+                <a class="article__button" href="#" role="button"></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="request-cleaning">
+        <div class="request-cleaning__content">
+          <div class="request-cleaning__main">
+            <h2 class="request-cleaning__title">
+              Request a free cleaning quote today
+            </h2>
+            <p class="request-cleaning__text">
+              In dignissim euismod pretium amet enim a eu nam ut urna accumsan
+              pellentesque lacus duis pharetra eutortor.
+            </p>
+            <div class="info request-cleaning__phone-info">
+              <img
+                class="info__icon"
+                src="<%=require('../../assets/icons/handset.svg')%>"
+                alt="phone handset"
+                loading="lazy"
+              />
+              <div class="info__content">
+                <h6 class="info__subtitle">Call us now</h6>
+                <h3 class="info__title">(414) 567 - 2109</h3>
+              </div>
+            </div>
+          </div>
+          <div class="request-cleaning__additional">
+            <h3 class="request-cleaning__question">Not convinced yet?</h3>
+            <p class="request-cleaning__explanation">
+              Massa bibendum consectetur maurisid gravida purus, dolor dui amet
+              morbi non nunc urna purus diam.
+            </p>
+          </div>
+          <a
+            class="button button--transparent request-cleaning__button"
+            href="#"
+            role="button"
+            >Browse our packages</a
+          >
+        </div>
+        <form
+          class="request-cleaning__form form"
+          name="trequest-cleaning"
+          method="post"
+          action="console.log(data)"
+        >
+          <div class="form__row">
+            <div class="form__input-field input-field">
+              <label class="input-field__label" for="full-name"
+                >Full name</label
+              >
+              <input
+                class="input-field__input"
+                type="text"
+                id="full-name"
+                required
+              />
+            </div>
+            <div class="form__input-field input-field">
+              <label class="input-field__label" for="username"
+                >Phone number</label
+              >
+              <input
+                class="input-field__input"
+                type="tel"
+                id="phone-number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__input-field input-field">
+              <label class="input-field__label" for="address">Address</label>
+              <input class="input-field__input" type="text" id="address" />
+            </div>
+            <div class="form__input-field input-field">
+              <label class="input-field__label" for="email">Email</label>
+              <input
+                class="input-field__input"
+                type="email"
+                id="email"
+                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                size="30"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__input-field input-field">
+              <label class="input-field__label" for="requested-service"
+                >Requested service</label
+              >
+              <input
+                class="input-field__input"
+                type="text"
+                id="requested-service"
+              />
+            </div>
+            <div class="form__input-field input-field">
+              <label class="input-field__label" for="day-of-service"
+                >Day of service</label
+              >
+              <input
+                class="input-field__input"
+                type="date"
+                id="day-of-service"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__textarea-field textarea-field">
+            <label class="textarea-field__label" for="add-a-note"
+              >Add a note</label
+            >
+            <textarea
+              class="textarea-field__textarea"
+              id="add-a-note"
+              name="add-a-note"
+              rows="5"
+              cols="33"
+            ></textarea>
+          </div>
+          <div class="form__buttons-field">
+            <button class="button form__button-submit" type="submit">
+              Submit message
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__main-content">
+        <div class="footer__content-chapter">
+          <h3 class="footer__main-title">Quality cleaning for your home</h3>
+          <p class="footer__main-text">
+            Lorem ipsum dolor sit amet cteturdo adipiscing elit, sed do eiusmo.
+          </p>
+        </div>
+        <div class="footer__content-chapter footet__contacts">
+          <h5 class="footet__title">Contact us</h5>
+          <ul class="footet__list footet__list--contacts">
+            <li class="footet__list-item">
+              <address class="footet__contacts-address">
+                1827 Nickel Road, Los Angeles, CA, 90017, United States
+              </address>
+            </li>
+            <li class="footet__list-item">(414) 567 - 2109</li>
+            <li class="footet__list-item">contact@cleaning.com</li>
+          </ul>
+        </div>
+        <div class="footer__content-chapter footer__hours">
+          <h5 class="footet__title">Contact us</h5>
+          <ul class="footet__list">
+            <li class="footet__list-item">
+              <h6 class="footer__hours-day">Monday to Friday</h6>
+              <p class="footer__hours-opening-hours">6:00 AM - 9:00 PM</p>
+            </li>
+            <li class="footet__list-item">
+              <h6 class="footer__hours-day">Saturday & Sunday</h6>
+              <p class="footer__hours-opening-hours">8:00 AM - 8:00 PM</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content-chapter footer__content-chapter--flex">
+          <h5 class="footet__title">Get a free estimate</h5>
+          <a class="footet__phone-link" href="tel:4145672109"
+            >(414) 567 - 2109</a
+          >
+          <p class="footet__text">
+            Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do eiusmod.
+          </p>
+          <a class="button footer__button-request-quote" href="#" role="button"
+            >Request a free quote</a
+          >
+        </div>
+      </div>
+      <div class="footer__additional-content">
+        <a class="header__logo-link" href="index.html" title="go to main page">
+          <img
+            class="header__logo-icon"
+            src="<%=require('../../assets/icons/logo.svg')%>"
+            alt="logo"
+            loading="lazy"
+          />
+        </a>
+        <p class="footer__copyright">
+          Copyright &copy; Cleaning X | Designed by
+          <a class="footer__link" href="#" alt="d">BRIX Templates</a> - Powered
+          by <a class="footer__link" href="#" alt="d">Webflow</a> -
+          <a class="footer__link" href="#" alt="d">Licenses</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

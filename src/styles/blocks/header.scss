@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  padding: 32px 110px;
+  max-width: map-get($grid-bps, xxl);
+  background-color: $color-white;
+  margin: 0 auto;
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.header__logo-icon {
+  width: 178px;
+  height: 42px;
+}
+
+.header__navigation {
+  align-self: stretch;
+  margin-right: auto;
+}
+
+.header__cart {
+  margin-right: 24px;
+  font-size: $fs-base;
+  line-height: $lh-p;
+  color: $color-purple;
+}
+
+.header__cart-counter {
+  font-style: normal;
+}
+
+.header__free-quote-button {
+  padding: 18px 24px;
+  font-size: $fs-base-middle;
+  line-height: $lh-base-middle;
+  font-weight: $f-weight-normal;
+}

@@ -1,0 +1,28 @@
+.welcome {
+  background-image: url(../../assets/images/woman-cleaning.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding-top: 227px;
+  padding-bottom: 140px;
+  margin-bottom: 240px;
+  margin-top: 118px;
+}
+
+.welcome__content {
+  max-width: 591px;
+  margin-left: 24px;
+}
+
+.welcome__title {
+  margin-bottom: 22px;
+}
+
+.welcome__text {
+  margin-bottom: 34px;
+}
+
+.welcome__interaction-with-service {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}

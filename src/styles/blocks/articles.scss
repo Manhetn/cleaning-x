@@ -1,0 +1,40 @@
+.articles {
+  padding-bottom: 240px;
+}
+
+.articles__top-content {
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 4px auto;
+}
+
+.articles__content {
+  max-width: 500px;
+}
+
+.articles__title {
+  margin-bottom: 9px;
+}
+
+// .articles__text {
+// }
+
+.articles__buttons {
+  display: flex;
+  gap: 28px;
+}
+
+// .articles__button {
+// }
+
+.articles__list {
+  display: flex;
+  gap: 28px;
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+// .articles__article {
+// }

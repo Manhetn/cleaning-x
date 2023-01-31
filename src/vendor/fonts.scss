@@ -1,0 +1,13 @@
+@font-face {
+  font-family: $f-family;
+  font-style: normal;
+  font-weight: $f-weight-normal;
+  src: url('../assets/fonts/roboto-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: $f-family;
+  font-style: normal;
+  font-weight: $f-weight-bold;
+  src: url('../assets/fonts/roboto-bold.woff') format('woff');
+}

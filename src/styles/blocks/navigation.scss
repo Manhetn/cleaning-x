@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 22px;
+}
+
+.navigation__link {
+  font-size: $fs-base;
+  line-height: $lh-p;
+  color: $color-purple;
+}

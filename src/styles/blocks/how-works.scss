@@ -1,0 +1,46 @@
+.how-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 481px;
+}
+
+.how-works__title {
+  max-width: 531px;
+  margin-bottom: 21px;
+}
+
+.how-works__text {
+  max-width: 648px;
+  margin-bottom: 58px;
+}
+
+.how-works__order-points {
+  display: flex;
+  gap: 42px;
+  margin-bottom: 56px;
+}
+
+.how-works__order-point {
+  max-width: 374px;
+  text-align: center;
+}
+
+.how-works__order-point-image {
+  max-height: 240px;
+  max-width: 240px;
+  margin-bottom: 39px;
+}
+
+.how-works__order-point-title {
+  margin-bottom: 16px;
+}
+
+.how-works__buttons {
+  display: flex;
+  gap: 28px;
+}
+
+.how-works__button {
+  font-weight: $f-weight-normal;
+}

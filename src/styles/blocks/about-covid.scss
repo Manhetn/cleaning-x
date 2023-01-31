@@ -1,0 +1,42 @@
+.about-covid {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+
+  h2,
+  h3,
+  h6,
+  p {
+    color: $color-white;
+  }
+}
+
+.about-covid__background {
+  max-width: 1220px;
+  padding: 137px 50px 137px 590px;
+  border-radius: $radius-x;
+  background-color: $color-purple;
+  background-image: url(../../assets/images/cleaning-worker.svg);
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+.about-covid__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.about-covid__title {
+  margin-bottom: 18px;
+}
+
+.about-covid__text {
+  display: inline-block;
+  max-width: 474px;
+  margin-bottom: 11.5px;
+}
+
+.about-covid__interaction-with-service {
+  display: flex;
+  gap: 28px;
+}

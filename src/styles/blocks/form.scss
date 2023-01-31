@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background: $color-white;
+  padding: 85px 61px;
+  border: 1px solid $color-gray-light;
+  box-shadow: 0px 2px 6px $color-box-shadow;
+  border-radius: $radius-base;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.form__input-field {
+  margin-bottom: 32px;
+}
+
+.form__textarea-field {
+  margin-bottom: 32px;
+}
+
+.form__buttons-field {
+  display: flex;
+  justify-content: space-between;
+}

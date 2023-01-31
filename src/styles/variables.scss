@@ -1,0 +1,67 @@
+$grid-bps: (
+  xs: 0,
+  ss: 320px,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1260px,
+  xxl: 1440px,
+);
+
+/* color */
+$color-white: #ffffff;
+$color-purple: #211f54;
+$color-blue: #0075ff;
+$color-blue-inconspicuous: #f7f9fc;
+$color-gray: #6e7191;
+$color-gray-light: #eff0f6;
+$color-gray-base: #e5e5e5;
+$color-gray-inconspicuous: #dcddeb;
+$color-box-shadow: rgba(20, 20, 43, 0.04);
+
+/* border */
+$radius-circle: 50%;
+$radius-base: 16px;
+$radius-x: 24px;
+$radius-xl: 53px;
+
+/* typography */
+$fs-subtitle: 21px;
+$lh-subtitle: 30px;
+
+$fs-small: 12px;
+
+$fs-base-middle: 16px;
+$lh-base-middle: 18px;
+
+$fs-base: 18px;
+$lh-base: 20px;
+
+$fs-non-standard: 54px;
+$lh-non-standard: 66px;
+
+$fs-h1: 68px;
+$lh-h1: 74px;
+
+$fs-h2: 48px;
+$lh-h2: 58px;
+
+$fs-h3: 28px;
+$lh-h3: 36px;
+
+$fs-h4: 24px;
+$lh-h4: 34px;
+
+$fs-h5: 20px;
+$lh-h5: 22px;
+
+$fs-h6: 16px;
+$lh-h6: 18px;
+
+$fs-p: 21px;
+$lh-p: 30px;
+
+$f-family: 'Roboto';
+
+$f-weight-normal: 400;
+$f-weight-bold: 700;
