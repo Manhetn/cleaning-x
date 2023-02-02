@@ -2,52 +2,100 @@
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
-}
 
-.cleaning-area__background {
-  max-width: 1220px;
-  padding: 60px 0 60px 720px;
-  background-image: url(../../assets/images/big-house.svg);
-  background-repeat: no-repeat;
-  background-position: 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  &__background {
+    max-width: 1220px;
+    width: 100%;
+    padding: 60px 24px 60px 24px;
+    background-image: url(../../assets/images/big-house.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.cleaning-area__title {
-  margin: 0 22px 19px 0;
-}
+  &__content {
+    max-width: 500px;
+  }
 
-.cleaning-area__text {
-  font-size: $fs-base;
-  margin: 0 4px 26px 0;
-}
+  &__title {
+    margin: 0 22px 19px 0;
+  }
 
-.cleaning-area__areas {
-  margin-bottom: 48px;
-  display: grid;
-  grid-template-columns: repeat(2, 147px);
-  column-gap: 56px;
-  gap: 24px;
-}
+  &__text {
+    font-size: $fs-base;
+    margin: 0 4px 26px 0;
+  }
 
-.cleaning-area__area {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  // width: 147px;
-  font-size: $fs-base;
-  line-height: $lh-base;
-  font-weight: $f-weight-bold;
-  color: $color-purple;
-}
+  &__areas {
+    margin-bottom: 48px;
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 147px);
+    grid-row-gap: 24px;
+    grid-column-gap: 56px;
+  }
 
-.cleaning-area__area::before {
-  display: block;
-  content: '';
-  width: 26px;
-  height: 26px;
-  background-image: url(../../assets/icons/checked.svg);
-  background-repeat: no-repeat;
+  &__area {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: $fs-base;
+    line-height: $lh-base;
+    font-weight: $f-weight-bold;
+    color: $color-purple;
+  }
+
+  &__area::before {
+    display: block;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url(../../assets/icons/checked.svg);
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: map-get($grid-bps, xl)) {
+    padding-left: 43px;
+    padding-right: 43px;
+
+    &__background {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5)),
+        url(../../assets/images/big-house.svg);
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, lg)) {
+    padding-right: 0;
+    padding-left: 0;
+
+    &__background {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.7)),
+        url(../../assets/images/big-house.svg);
+      background-position: center bottom;
+      justify-content: center;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, md)) {
+    &__background {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, sm)) {
+    &__title {
+      font-size: 34px;
+      line-height: 44px;
+    }
+
+    &__areas {
+      margin: 0 auto 48px auto;
+      grid-column-gap: 16px;
+      grid-template-columns: repeat(2, 127px);
+    }
+  }
 }

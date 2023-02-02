@@ -28,7 +28,6 @@ section {
   max-width: map-get($grid-bps, xxl);
   margin: 0 auto;
   width: inherit;
-  max-width: 1440px;
   padding: 0 86px;
 }
 
@@ -79,7 +78,6 @@ p {
   font-size: $fs-p;
   line-height: $lh-p;
   margin: 0;
-  // color: $color-gray;
 }
 
 a {

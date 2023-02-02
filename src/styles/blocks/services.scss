@@ -1,25 +1,74 @@
 .services {
   margin-bottom: 240px;
-}
 
-.services__top-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 24px 62px 24px;
-}
+  &__top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px 62px 24px;
+  }
 
-.services__title {
-  display: inline-block;
-  max-width: 475px;
-}
+  &__title {
+    display: inline-block;
+    max-width: 475px;
+  }
 
-.services__articles {
-  display: flex;
-  gap: 28px;
-  margin: 0 24px;
-}
+  &__articles {
+    display: flex;
+    gap: 28px;
+    margin: 0 24px;
+  }
 
-.services__button {
-  font-weight: $f-weight-normal;
+  &__button {
+    font-weight: $f-weight-normal;
+  }
+
+  @media (max-width: map-get($grid-bps, xl)) {
+    padding-left: 43px;
+    padding-right: 43px;
+
+    &__articles {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, lg)) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__top-content {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, md)) {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__top-content {
+      justify-content: center;
+    }
+
+    &__top-content {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, sm)) {
+    &__title {
+      font-size: 34px;
+      line-height: 44px;
+    }
+
+    &__articles {
+      margin: 0;
+    }
+  }
 }

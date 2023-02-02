@@ -6,23 +6,54 @@
   padding-bottom: 140px;
   margin-bottom: 240px;
   margin-top: 118px;
-}
 
-.welcome__content {
-  max-width: 591px;
-  margin-left: 24px;
-}
+  &__content {
+    max-width: 591px;
+    margin-left: 24px;
+  }
 
-.welcome__title {
-  margin-bottom: 22px;
-}
+  &__title {
+    margin-bottom: 22px;
+  }
 
-.welcome__text {
-  margin-bottom: 34px;
-}
+  &__text {
+    margin-bottom: 34px;
+  }
 
-.welcome__interaction-with-service {
-  display: flex;
-  align-items: center;
-  gap: 28px;
+  &__interaction-with-service {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  @media (max-width: map-get($grid-bps, xl)) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7)),
+      url(../../assets/images/woman-cleaning.svg);
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: map-get($grid-bps, lg)) {
+    &__content {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, md)) {
+    background-position: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media (max-width: map-get($grid-bps, sm)) {
+    &__title {
+      font-size: 38px;
+      line-height: 48px;
+    }
+
+    &__interaction-with-service {
+      flex-direction: column;
+    }
+  }
 }

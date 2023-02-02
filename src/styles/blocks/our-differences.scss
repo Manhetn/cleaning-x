@@ -2,79 +2,123 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // padding-bottom: 200px;
   margin-bottom: 239px;
-}
 
-.our-differences::after {
-  display: block;
-  content: '';
-  height: 1px;
-  width: calc(100% - 48px);
-  background-color: $color-gray-inconspicuous;
-}
+  &::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: calc(100% - 48px);
+    background-color: $color-gray-inconspicuous;
+  }
 
-.our-differences__background {
-  max-width: 1220px;
-  padding: 24px 705px 25px 0;
-  background-image: url(../../assets/images/cleaning-man.svg);
-  background-repeat: no-repeat;
-  background-position: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 200px;
-}
+  &__background {
+    max-width: 1220px;
+    width: 100%;
+    padding: 24px 0 25px 0;
+    background-image: url(../../assets/images/cleaning-man.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 200px;
+  }
 
-.our-differences__title {
-  margin-bottom: 19px;
-}
+  &__content {
+    max-width: 514px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.our-differences__text {
-  margin-bottom: 15px;
-}
+  &__title {
+    margin-bottom: 19px;
+  }
 
-.our-differences__text-small {
-  margin-bottom: 26px;
-  font-size: $fs-small;
-  line-height: $lh-p;
-  max-width: 465px;
-}
+  &__text {
+    margin-bottom: 15px;
+  }
 
-.our-differences__differences {
-  max-width: 428px;
-  align-self: stretch;
-  margin-bottom: 46px;
-  display: flex;
-  justify-content: space-between;
-}
+  &__text-small {
+    margin-bottom: 26px;
+    font-size: $fs-small;
+    line-height: $lh-p;
+    max-width: 465px;
+  }
 
-// .our-differences__difference {
-// }
+  &__differences {
+    max-width: 428px;
+    align-self: stretch;
+    margin-bottom: 46px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.our-differences__difference-title {
-  display: inline-block;
-  align-items: center;
-  display: flex;
-  font-size: calc($fs-h2 + 6px);
-  line-height: calc($lh-h2 + 8px);
-  margin-bottom: 3px;
-}
+  &__difference-title {
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    font-size: calc($fs-h2 + 6px);
+    line-height: calc($lh-h2 + 8px);
+    margin-bottom: 3px;
+  }
 
-.our-differences__difference-title::after {
-  display: block;
-  content: '';
-  width: 28px;
-  height: 28px;
-  background-image: url(../../assets/icons/cross.svg);
-}
+  &__difference-title::after {
+    display: block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url(../../assets/icons/cross.svg);
+  }
 
-.our-differences__difference-subtitle {
-  font-size: $fs-base;
-  line-height: calc($lh-base + 4px);
-  color: #6e7191;
-}
+  &__difference-subtitle {
+    font-size: $fs-base;
+    line-height: calc($lh-base + 4px);
+    color: #6e7191;
+  }
 
-.request-cleaning__form {
-  max-width: 673px;
+  @media (max-width: map-get($grid-bps, xl)) {
+    padding-left: 43px;
+    padding-right: 43px;
+
+    &__background {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.8)),
+        url(../../assets/images/cleaning-man.svg);
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, lg)) {
+    padding-right: 0px;
+    padding-left: 0px;
+
+    &__background {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, md)) {
+    &__background {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, sm)) {
+    &__title {
+      font-size: 38px;
+      line-height: 48px;
+    }
+
+    &__differences {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__difference-title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 16px;
+    }
+  }
 }

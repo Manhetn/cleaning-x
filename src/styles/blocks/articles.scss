@@ -1,40 +1,72 @@
 .articles {
   padding-bottom: 240px;
-}
-
-.articles__top-content {
-  max-width: 1220px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin: 0 auto 4px auto;
+
+  &__top-content {
+    max-width: 1220px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  &__content {
+    max-width: 500px;
+  }
+
+  &__title {
+    margin-bottom: 9px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__list {
+    max-width: 1220px;
+    width: 100%;
+    display: flex;
+    gap: 28px;
+  }
+
+  @media (max-width: map-get($grid-bps, xl)) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: map-get($grid-bps, lg)) {
+    &__top-content {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+
+    &__content {
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, md)) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media (max-width: map-get($grid-bps, sm)) {
+    &__title {
+      font-size: 38px;
+      line-height: 48px;
+    }
+
+    &__buttons {
+      align-self: stretch;
+      flex-direction: column;
+    }
+  }
 }
-
-.articles__content {
-  max-width: 500px;
-}
-
-.articles__title {
-  margin-bottom: 9px;
-}
-
-// .articles__text {
-// }
-
-.articles__buttons {
-  display: flex;
-  gap: 28px;
-}
-
-// .articles__button {
-// }
-
-.articles__list {
-  display: flex;
-  gap: 28px;
-  margin: 0 auto;
-  max-width: 1220px;
-}
-
-// .articles__article {
-// }

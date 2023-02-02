@@ -9,12 +9,18 @@
   font-weight: $f-weight-bold;
   border: none;
   cursor: pointer;
-}
+  width: fit-content;
 
-.button--transparent {
-  background: transparent;
-  border: 1px solid $color-gray-light;
-  background-color: $color-white;
-  color: $color-purple;
-  box-shadow: 0px 4px 10px $color-box-shadow;
+  &--transparent {
+    background: transparent;
+    border: 1px solid $color-gray-light;
+    background-color: $color-white;
+    color: $color-purple;
+    box-shadow: 0px 4px 10px $color-box-shadow;
+  }
+
+  @media (max-width: map-get($grid-bps, sm)) {
+    text-align: center;
+    width: 100%;
+  }
 }

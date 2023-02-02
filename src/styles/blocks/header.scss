@@ -28,7 +28,7 @@
 }
 
 .header__navigation {
-  align-self: stretch;
+  // align-self: stretch;
   margin-right: auto;
 }
 
@@ -48,4 +48,21 @@
   font-size: $fs-base-middle;
   line-height: $lh-base-middle;
   font-weight: $f-weight-normal;
+}
+
+@media (max-width: map-get($grid-bps, xl)) {
+  .header__cart {
+    margin-left: 22px;
+  }
+
+  .header__content {
+    // padding: 16px 30px;
+  }
+}
+
+@media (max-width: map-get($grid-bps, lg)) {
+  .header__content {
+    // flex-wrap: wrap;
+    // padding: 16px 30px;
+  }
 }

@@ -5,6 +5,7 @@
 
 .navigation__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 22px;
 }
 
@@ -12,4 +13,25 @@
   font-size: $fs-base;
   line-height: $lh-p;
   color: $color-purple;
+   width: 100px;
+}
+
+@media (max-width: map-get($grid-bps, xl)) {
+  .navigation__list {
+    // flex-direction: column;
+  }
+}
+
+@media (max-width: map-get($grid-bps, lg)) {
+  .navigation {
+    flex-wrap: wrap;
+    // display: none;
+    // position: absolute;
+    // border: 0;
+    // align-items: stretch;
+  }
+  .navigation__list {
+    flex-wrap: wrap;
+    // flex-wrap: wrap;
+  }
 }

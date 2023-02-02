@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <!-- <meta charset="utf-8" /> -->
     <!-- <link
       rel="icon"
       type="image/png"
@@ -65,6 +65,12 @@
       sizes="180x180"
       href="<%=require('../../assets/images/favicon/apple-icon-180x180.png')%>"
     /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ilya Shestakov" />
+
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+    <!-- <meta name="author" content="Ilya Shestakov"> -->
     <title>Cleaning-X</title>
   </head>
   <body>
@@ -97,12 +103,16 @@
             </li>
           </ul>
         </nav>
-        <span class="header__cart">
-          Cart (<i class="header__cart-counter">0</i>)
-        </span>
-        <a class="button header__free-quote-button" href="#request-cleaning-form" role="button">
-          Get a free quote
-        </a>
+         <span class="header__cart">
+            Cart (<i class="header__cart-counter">0</i>)
+          </span>
+          <a
+            class="button header__free-quote-button"
+            href="#request-cleaning-form"
+            role="button"
+          >
+            Get a free quote
+          </a>
       </div>
     </header>
     <main class="main">
@@ -115,21 +125,26 @@
             aliquet et nulla magna lacus penatibus.
           </p>
           <div class="welcome__interaction-with-service">
-            <a class="button welcome__free-quote-button" href="#request-cleaning-form" role="button"
+            <a
+              class="button welcome__free-quote-button"
+              href="#request-cleaning-form"
+              role="button"
               >Get a free quote</a
             >
-            <div class="info welcome__phone-info">
-              <img
-                class="info__icon"
-                src="<%=require('../../assets/icons/handset.svg')%>"
-                alt="phone handset"
-                loading="lazy"
-              />
-              <div class="info__content">
-                <h6 class="info__subtitle">Call us now</h6>
-                <h3 class="info__title">(414) 567 - 2109</h3>
+            <a class="welcome__phone-link" href="tel:+14145672109">
+              <div class="info welcome__phone-info">
+                <img
+                  class="info__icon"
+                  src="<%=require('../../assets/icons/handset.svg')%>"
+                  alt="phone handset"
+                  loading="lazy"
+                />
+                <div class="info__content">
+                  <h6 class="info__subtitle">Call us now</h6>
+                  <h3 class="info__title">(414) 567 - 2109</h3>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -183,7 +198,10 @@
           </li>
         </ol>
         <div class="how-works__buttons">
-          <a class="button how-works__button" href="#request-cleaning-form" role="button"
+          <a
+            class="button how-works__button"
+            href="#request-cleaning-form"
+            role="button"
             >Get a free quote</a
           >
           <a
@@ -308,96 +326,108 @@
       </section>
       <section class="about-covid">
         <div class="about-covid__background">
-          <h6 class="about-covid__subtitle">Covid-19 sanitization</h6>
-          <h2 class="about-covid__title">
-            We follow guidelines to keep you safe from the COVID-19 virus
-          </h2>
-          <p class="about-covid__text">
-            Lobortis mattis odio leo eget mauris met aliquet semper molestie
-            sollicitudin congue massa mauris lectus.
-          </p>
-          <div class="about-covid__interaction-with-service">
-            <a
-              class="button about-covid__free-quote-button"
-              href="#request-cleaning-form"
-              role="button"
-              >Get a free quote</a
-            >
-            <div class="info info--color-white about-covid__phone-info">
-              <img
-                class="info__icon"
-                src="<%=require('../../assets/icons/handset.svg')%>"
-                alt="phone handset"
-                loading="lazy"
-              />
-              <div class="info__content">
-                <h6 class="info__subtitle">Call us now</h6>
-                <h3 class="info__title">(414) 567 - 2109</h3>
-              </div>
+          <div class="about-covid__content">
+            <h6 class="about-covid__subtitle">Covid-19 sanitization</h6>
+            <h2 class="about-covid__title">
+              We follow guidelines to keep you safe from the COVID-19 virus
+            </h2>
+            <p class="about-covid__text">
+              Lobortis mattis odio leo eget mauris met aliquet semper molestie
+              sollicitudin congue massa mauris lectus.
+            </p>
+            <div class="about-covid__interaction-with-service">
+              <a
+                class="button about-covid__free-quote-button"
+                href="#request-cleaning-form"
+                role="button"
+                >Get a free quote</a
+              >
+              <a class="about-covid__phone-link" href="tel:+14145672109">
+                <div class="info about-covid__phone-info">
+                  <img
+                    class="info__icon"
+                    src="<%=require('../../assets/icons/handset.svg')%>"
+                    alt="phone handset"
+                    loading="lazy"
+                  />
+                  <div class="info__content">
+                    <h6 class="info__subtitle about-covid__phone-info-subtitle">
+                      Call us now
+                    </h6>
+                    <h3 class="info__title about-covid__phone-info-title">
+                      (414) 567 - 2109
+                    </h3>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <section class="cleaning-area">
         <div class="cleaning-area__background">
-          <h2 class="cleaning-area__title">
-            We cover all areas of your home or office
-          </h2>
-          <p class="cleaning-area__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-          <ul class="cleaning-area__areas">
-            <li class="cleaning-area__area">Bathrooms</li>
-            <li class="cleaning-area__area">Bedrooms</li>
-            <li class="cleaning-area__area">Kitchens</li>
-            <li class="cleaning-area__area">Offices</li>
-            <li class="cleaning-area__area">Living Rooms</li>
-            <li class="cleaning-area__area">Businesses</li>
-            <li class="cleaning-area__area">Carpets</li>
-            <li class="cleaning-area__area">Windows</li>
-          </ul>
-          <a
-            class="button about-covid__free-quote-button"
-            href="#request-cleaning-form"
-            role="button"
-            >Get a free quote</a
-          >
+          <div class="cleaning-area__content">
+            <h2 class="cleaning-area__title">
+              We cover all areas of your home or office
+            </h2>
+            <p class="cleaning-area__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <ul class="cleaning-area__areas">
+              <li class="cleaning-area__area">Bathrooms</li>
+              <li class="cleaning-area__area">Bedrooms</li>
+              <li class="cleaning-area__area">Kitchens</li>
+              <li class="cleaning-area__area">Offices</li>
+              <li class="cleaning-area__area">Living Rooms</li>
+              <li class="cleaning-area__area">Businesses</li>
+              <li class="cleaning-area__area">Carpets</li>
+              <li class="cleaning-area__area">Windows</li>
+            </ul>
+            <a
+              class="button about-covid__free-quote-button"
+              href="#request-cleaning-form"
+              role="button"
+              >Get a free quote</a
+            >
+          </div>
         </div>
       </section>
       <section class="our-differences">
         <div class="our-differences__background">
-          <h2 class="our-differences__title">What makes us different?</h2>
-          <p class="our-differences__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-          <small class="our-differences__text-small">
-            Sed ut perspiciatis unde omnis iste natus error sit atem accusantium
-            doloremque laudantiu sed ut.
-          </small>
-          <ul class="our-differences__differences">
-            <li class="our-differences__difference">
-              <h2 class="our-differences__difference-title">10</h2>
-              <h3 class="our-differences__difference-subtitle">Years</h3>
-            </li>
-            <li class="our-differences__difference">
-              <h2 class="our-differences__difference-title">5k</h2>
-              <h3 class="our-differences__difference-subtitle">Clients</h3>
-            </li>
-            <li class="our-differences__difference">
-              <h2 class="our-differences__difference-title">20k</h2>
-              <h3 class="our-differences__difference-subtitle">Jobs done</h3>
-            </li>
-          </ul>
-          <a
-            class="button about-covid__free-quote-button"
-            href="#request-cleaning-form"
-            role="button"
-            >Get a free quote</a
-          >
+          <div class="our-differences__content">
+            <h2 class="our-differences__title">What makes us different?</h2>
+            <p class="our-differences__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <small class="our-differences__text-small">
+              Sed ut perspiciatis unde omnis iste natus error sit atem
+              accusantium doloremque laudantiu sed ut.
+            </small>
+            <ul class="our-differences__differences">
+              <li class="our-differences__difference">
+                <h2 class="our-differences__difference-title">10</h2>
+                <h3 class="our-differences__difference-subtitle">Years</h3>
+              </li>
+              <li class="our-differences__difference">
+                <h2 class="our-differences__difference-title">5k</h2>
+                <h3 class="our-differences__difference-subtitle">Clients</h3>
+              </li>
+              <li class="our-differences__difference">
+                <h2 class="our-differences__difference-title">20k</h2>
+                <h3 class="our-differences__difference-subtitle">Jobs done</h3>
+              </li>
+            </ul>
+            <a
+              class="button about-covid__free-quote-button"
+              href="#request-cleaning-form"
+              role="button"
+              >Get a free quote</a
+            >
+          </div>
         </div>
       </section>
       <section class="articles">
@@ -410,7 +440,10 @@
             </p>
           </div>
           <div class="articles__buttons">
-            <a class="button articles__button" href="#request-cleaning-form" role="button"
+            <a
+              class="button articles__button"
+              href="#request-cleaning-form"
+              role="button"
               >Get a free quote</a
             >
             <a
@@ -476,18 +509,20 @@
               In dignissim euismod pretium amet enim a eu nam ut urna accumsan
               pellentesque lacus duis pharetra eutortor.
             </p>
-            <div class="info request-cleaning__phone-info">
-              <img
-                class="info__icon"
-                src="<%=require('../../assets/icons/handset.svg')%>"
-                alt="phone handset"
-                loading="lazy"
-              />
-              <div class="info__content">
-                <h6 class="info__subtitle">Call us now</h6>
-                <h3 class="info__title">(414) 567 - 2109</h3>
+            <a class="request-cleaning__phone-link" href="tel:+14145672109">
+              <div class="info request-cleaning__phone-info">
+                <img
+                  class="info__icon"
+                  src="<%=require('../../assets/icons/handset.svg')%>"
+                  alt="phone handset"
+                  loading="lazy"
+                />
+                <div class="info__content">
+                  <h6 class="info__subtitle">Call us now</h6>
+                  <h3 class="info__title">(414) 567 - 2109</h3>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="request-cleaning__additional">
             <h3 class="request-cleaning__question">Not convinced yet?</h3>
@@ -503,96 +538,98 @@
             >Browse our packages</a
           >
         </div>
-        <form
-          class="request-cleaning__form form"
-          name="request-cleaning"
-          id="request-cleaning-form"
-          method="post"
-          action="console.log(data)"
-        >
-          <div class="form__row">
-            <div class="form__input-field input-field">
-              <label class="input-field__label" for="full-name"
-                >Full name</label
+        <div class="request-cleaning__form-wrapper">
+          <form
+            class="form"
+            name="request-cleaning"
+            id="request-cleaning-form"
+            method="post"
+            action="console.log(data)"
+          >
+            <div class="form__row">
+              <div class="form__input-field input-field">
+                <label class="input-field__label" for="full-name"
+                  >Full name</label
+                >
+                <input
+                  class="input-field__input"
+                  type="text"
+                  id="full-name"
+                  required
+                />
+              </div>
+              <div class="form__input-field input-field">
+                <label class="input-field__label" for="username"
+                  >Phone number</label
+                >
+                <input
+                  class="input-field__input"
+                  type="tel"
+                  id="phone-number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__input-field input-field">
+                <label class="input-field__label" for="address">Address</label>
+                <input class="input-field__input" type="text" id="address" />
+              </div>
+              <div class="form__input-field input-field">
+                <label class="input-field__label" for="email">Email</label>
+                <input
+                  class="input-field__input"
+                  type="email"
+                  id="email"
+                  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  size="30"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__input-field input-field">
+                <label class="input-field__label" for="requested-service"
+                  >Requested service</label
+                >
+                <input
+                  class="input-field__input"
+                  type="text"
+                  id="requested-service"
+                />
+              </div>
+              <div class="form__input-field input-field">
+                <label class="input-field__label" for="day-of-service"
+                  >Day of service</label
+                >
+                <input
+                  class="input-field__input"
+                  type="date"
+                  id="day-of-service"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__textarea-field textarea-field">
+              <label class="textarea-field__label" for="add-a-note"
+                >Add a note</label
               >
-              <input
-                class="input-field__input"
-                type="text"
-                id="full-name"
-                required
-              />
+              <textarea
+                class="textarea-field__textarea"
+                id="add-a-note"
+                name="add-a-note"
+                rows="5"
+                cols="33"
+              ></textarea>
             </div>
-            <div class="form__input-field input-field">
-              <label class="input-field__label" for="username"
-                >Phone number</label
-              >
-              <input
-                class="input-field__input"
-                type="tel"
-                id="phone-number"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                required
-              />
+            <div class="form__buttons-field">
+              <button class="button form__button-submit" type="submit">
+                Submit message
+              </button>
             </div>
-          </div>
-          <div class="form__row">
-            <div class="form__input-field input-field">
-              <label class="input-field__label" for="address">Address</label>
-              <input class="input-field__input" type="text" id="address" />
-            </div>
-            <div class="form__input-field input-field">
-              <label class="input-field__label" for="email">Email</label>
-              <input
-                class="input-field__input"
-                type="email"
-                id="email"
-                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                size="30"
-                required
-              />
-            </div>
-          </div>
-          <div class="form__row">
-            <div class="form__input-field input-field">
-              <label class="input-field__label" for="requested-service"
-                >Requested service</label
-              >
-              <input
-                class="input-field__input"
-                type="text"
-                id="requested-service"
-              />
-            </div>
-            <div class="form__input-field input-field">
-              <label class="input-field__label" for="day-of-service"
-                >Day of service</label
-              >
-              <input
-                class="input-field__input"
-                type="date"
-                id="day-of-service"
-                required
-              />
-            </div>
-          </div>
-          <div class="form__textarea-field textarea-field">
-            <label class="textarea-field__label" for="add-a-note"
-              >Add a note</label
-            >
-            <textarea
-              class="textarea-field__textarea"
-              id="add-a-note"
-              name="add-a-note"
-              rows="5"
-              cols="33"
-            ></textarea>
-          </div>
-          <div class="form__buttons-field">
-            <button class="button form__button-submit" type="submit">
-              Submit message
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -603,48 +640,51 @@
             Lorem ipsum dolor sit amet cteturdo adipiscing elit, sed do eiusmo.
           </p>
         </div>
-        <div class="footer__content-chapter footet__contacts">
-          <h5 class="footet__title">Contact us</h5>
-          <ul class="footet__list footet__list--contacts">
-            <li class="footet__list-item">
-              <address class="footet__contacts-address">
+        <div class="footer__content-chapter footer__contacts">
+          <h5 class="footer__title">Contact us</h5>
+          <ul class="footer__list footer__list--contacts">
+            <li class="footer__list-item">
+              <address class="footer__contacts-address">
                 1827 Nickel Road, Los Angeles, CA, 90017, United States
               </address>
             </li>
-            <li class="footet__list-item">(414) 567 - 2109</li>
-            <li class="footet__list-item">contact@cleaning.com</li>
+            <li class="footer__list-item">(414) 567 - 2109</li>
+            <li class="footer__list-item">contact@cleaning.com</li>
           </ul>
         </div>
         <div class="footer__content-chapter footer__hours">
-          <h5 class="footet__title">Contact us</h5>
-          <ul class="footet__list">
-            <li class="footet__list-item">
+          <h5 class="footer__title">Hours</h5>
+          <ul class="footer__list">
+            <li class="footer__list-item">
               <h6 class="footer__hours-day">Monday to Friday</h6>
               <p class="footer__hours-opening-hours">6:00 AM - 9:00 PM</p>
             </li>
-            <li class="footet__list-item">
+            <li class="footer__list-item">
               <h6 class="footer__hours-day">Saturday & Sunday</h6>
               <p class="footer__hours-opening-hours">8:00 AM - 8:00 PM</p>
             </li>
           </ul>
         </div>
         <div class="footer__content-chapter footer__content-chapter--flex">
-          <h5 class="footet__title">Get a free estimate</h5>
-          <a class="footet__phone-link" href="tel:4145672109"
+          <h5 class="footer__title">Get a free estimate</h5>
+          <a class="footer__phone-link" href="tel:+14145672109"
             >(414) 567 - 2109</a
           >
-          <p class="footet__text">
+          <p class="footer__text">
             Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do eiusmod.
           </p>
-          <a class="button footer__button-request-quote" href="#request-cleaning-form" role="button"
+          <a
+            class="button footer__button-request-quote"
+            href="#request-cleaning-form"
+            role="button"
             >Request a free quote</a
           >
         </div>
       </div>
       <div class="footer__additional-content">
-        <a class="header__logo-link" href="#top" title="go to main page">
+        <a class="footer__logo-link" href="#top" title="go to main page">
           <img
-            class="header__logo-icon"
+            class="footer__logo-icon"
             src="<%=require('../../assets/icons/logo.svg')%>"
             alt="logo"
             loading="lazy"

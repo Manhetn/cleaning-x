@@ -2,41 +2,89 @@
   margin-bottom: 200px;
   display: flex;
   justify-content: center;
+  color: $color-white;
 
-  h2,
-  h3,
-  h6,
-  p {
-    color: $color-white;
+  &__title,
+  &__phone-info-subtitle,
+  &__phone-info-title,
+  &__phone-link {
+    color: inherit;
   }
-}
 
-.about-covid__background {
-  max-width: 1220px;
-  padding: 137px 50px 137px 590px;
-  border-radius: $radius-x;
-  background-color: $color-purple;
-  background-image: url(../../assets/images/cleaning-worker.svg);
-  background-repeat: no-repeat;
-  background-position: 0%;
-}
+  &__background {
+    max-width: 1220px;
+    width: 100%;
+    padding: 137px 50px 137px 50px;
+    border-radius: $radius-x;
+    background-color: $color-purple;
+    background-image: url(../../assets/images/cleaning-worker.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.about-covid__subtitle {
-  text-transform: uppercase;
-  margin-bottom: 17px;
-}
+  &__content {
+    max-width: 556px;
+  }
 
-.about-covid__title {
-  margin-bottom: 18px;
-}
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
 
-.about-covid__text {
-  display: inline-block;
-  max-width: 474px;
-  margin-bottom: 11.5px;
-}
+  &__title {
+    margin-bottom: 18px;
+  }
 
-.about-covid__interaction-with-service {
-  display: flex;
-  gap: 28px;
+  &__text {
+    display: inline-block;
+    max-width: 474px;
+    margin-bottom: 11.5px;
+  }
+
+  &__interaction-with-service {
+    display: flex;
+    gap: 28px;
+  }
+
+  @media (max-width: map-get($grid-bps, xl)) {
+    padding-left: 43px;
+    padding-right: 43px;
+
+    &__background {
+      background-image: linear-gradient(rgba(33, 31, 84, 0.7)),
+        url(../../assets/images/cleaning-worker.svg);
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, lg)) {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__background {
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 0;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, md)) {
+    &__background {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__interaction-with-service {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: map-get($grid-bps, sm)) {
+    &__title {
+      font-size: 34px;
+      line-height: 44px;
+    }
+  }
 }
