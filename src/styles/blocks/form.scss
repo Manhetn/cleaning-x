@@ -13,7 +13,6 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 32px;
-    // width: 100%;
   }
 
   &__input-field {
@@ -29,19 +28,13 @@
     justify-content: space-between;
   }
 
-  @media (min-width: map-get($grid-bps, xxl)) {
+  @media (min-width: map-get($screens, xxl)) {
     &__row {
       flex-direction: row;
     }
   }
 
-  @media (max-width: map-get($grid-bps, lg)) {
-    // &__row {
-    //   flex-direction: column;
-    // }
-  }
-
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, md)) {
     padding: 42px 32px;
 
     &__buttons-field {
@@ -49,7 +42,7 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     padding: 24px 16px;
   }
 }

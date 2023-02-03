@@ -2,10 +2,9 @@
   background-image: url(../../assets/images/woman-cleaning.svg);
   background-repeat: no-repeat;
   background-position: 100%;
-  padding-top: 227px;
-  padding-bottom: 140px;
-  margin-bottom: 240px;
-  margin-top: 118px;
+  padding: 227px 0 140px;
+  margin: 118px auto 240px;
+  max-width: 1220px;
 
   &__content {
     max-width: 591px;
@@ -27,26 +26,34 @@
     gap: 28px;
   }
 
-  @media (max-width: map-get($grid-bps, xl)) {
+  @media (max-width: map-get($screens, xl)) {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7)),
       url(../../assets/images/woman-cleaning.svg);
-    padding-right: 30px;
-    padding-left: 30px;
-  }
+    padding-right: 43px;
+    padding-left: 43px;
 
-  @media (max-width: map-get($grid-bps, lg)) {
     &__content {
       margin-left: 0;
     }
   }
 
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, lg)) {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 118px auto 120px;
+
+    &__content {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: map-get($screens, md)) {
     background-position: 50%;
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     &__title {
       font-size: 38px;
       line-height: 48px;

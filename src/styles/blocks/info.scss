@@ -22,7 +22,7 @@
     color: $color-gray;
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     &__icon {
       width: 44px;
       height: 44px;

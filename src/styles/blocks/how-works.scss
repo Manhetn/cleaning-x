@@ -2,7 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 481px;
+
+  &::after {
+    display: block;
+    content: '';
+    height: 1px;
+    max-width: 1220px;
+    width: 100%;
+    margin: 240px auto;
+    background-color: $color-gray-inconspicuous;
+  }
 
   &__title {
     max-width: 531px;
@@ -44,7 +53,7 @@
     font-weight: $f-weight-normal;
   }
 
-  @media (max-width: map-get($grid-bps, xl)) {
+  @media (max-width: map-get($screens, xl)) {
     padding-left: 43px;
     padding-right: 43px;
 
@@ -54,12 +63,16 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, lg)) {
+  @media (max-width: map-get($screens, lg)) {
     padding-left: 30px;
     padding-right: 30px;
+
+    &::after {
+      margin: 120px auto;
+    }
   }
 
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, md)) {
     padding-left: 15px;
     padding-right: 15px;
 
@@ -70,7 +83,7 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     &__title {
       font-size: 34px;
       line-height: 44px;

@@ -33,12 +33,16 @@
     gap: 28px;
   }
 
-  @media (max-width: map-get($grid-bps, xl)) {
-    padding-right: 30px;
-    padding-left: 30px;
+  @media (max-width: map-get($screens, xxl)) {
+    padding-right: 43px;
+    padding-left: 43px;
   }
 
-  @media (max-width: map-get($grid-bps, lg)) {
+  @media (max-width: map-get($screens, lg)) {
+    padding-bottom: 120px;
+    padding-right: 30px;
+    padding-left: 30px;
+
     &__top-content {
       flex-direction: column;
       margin-bottom: 24px;
@@ -53,12 +57,12 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, md)) {
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     &__title {
       font-size: 38px;
       line-height: 48px;

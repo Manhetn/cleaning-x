@@ -95,18 +95,21 @@
     color: $color-blue;
   }
 
-  @media (max-width: map-get($grid-bps, xl)) {
-    padding-right: 30px;
-    padding-left: 30px;
+  @media (max-width: map-get($screens, xxl)) {
+    padding-right: 43px;
+    padding-left: 43px;
   }
 
-  @media (max-width: map-get($grid-bps, lg)) {
+  @media (max-width: map-get($screens, lg)) {
+    padding-right: 30px;
+    padding-left: 30px;
+
     &__list--contacts {
       padding: 0;
     }
   }
 
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, md)) {
     padding-right: 15px;
     padding-left: 15px;
     align-items: stretch;

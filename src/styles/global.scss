@@ -25,7 +25,7 @@ main {
 }
 
 section {
-  max-width: map-get($grid-bps, xxl);
+  max-width: map-get($screens, xxl);
   margin: 0 auto;
   width: inherit;
   padding: 0 86px;

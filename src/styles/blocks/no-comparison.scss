@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 239px;
 
   &::after {
     display: block;
     content: '';
     height: 1px;
-    width: calc(100% - 48px);
+    max-width: 1220px;
+    width: 100%;
+    margin: 240px auto;
     background-color: $color-gray-inconspicuous;
   }
 
@@ -43,17 +44,20 @@
     padding-bottom: 44.96%;
     border-radius: 53px;
     overflow: hidden;
-    margin-bottom: 240px;
   }
 
-  @media (max-width: map-get($grid-bps, xl)) {
+  @media (max-width: map-get($screens, xl)) {
     padding-left: 43px;
     padding-right: 43px;
   }
 
-  @media (max-width: map-get($grid-bps, lg)) {
+  @media (max-width: map-get($screens, lg)) {
     padding-left: 30px;
     padding-right: 30px;
+
+    &::after {
+      margin: 120px auto;
+    }
 
     &__achievements {
       flex-wrap: wrap;
@@ -66,7 +70,7 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, md)) {
     padding-left: 15px;
     padding-right: 15px;
 
@@ -75,7 +79,7 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     &__title {
       font-size: 34px;
       line-height: 44px;

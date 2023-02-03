@@ -37,13 +37,13 @@
     background-color: $color-blue;
   }
 
-  @media (max-width: map-get($grid-bps, lg)) {
+  @media (max-width: map-get($screens, lg)) {
     &__content {
       top: -30px;
     }
   }
 
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, md)) {
     &__content {
       padding: 26px 24px 24px;
     }

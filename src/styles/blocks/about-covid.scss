@@ -48,7 +48,7 @@
     gap: 28px;
   }
 
-  @media (max-width: map-get($grid-bps, xl)) {
+  @media (max-width: map-get($screens, xl)) {
     padding-left: 43px;
     padding-right: 43px;
 
@@ -58,9 +58,10 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, lg)) {
+  @media (max-width: map-get($screens, lg)) {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 120px;
 
     &__background {
       padding-left: 30px;
@@ -69,7 +70,7 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, md)) {
+  @media (max-width: map-get($screens, md)) {
     &__background {
       padding-left: 15px;
       padding-right: 15px;
@@ -81,7 +82,7 @@
     }
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     &__title {
       font-size: 34px;
       line-height: 44px;

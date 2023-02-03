@@ -1,82 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <meta charset="utf-8" /> -->
-    <!-- <link
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="<%=require('../../assets/images/favicon/favicon-32x32.png')%>"
+      href="<%=require('../../assets/images/favicon/logo-32x32.png')%>"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="<%=require('../../assets/images/favicon/favicon-96x96.png')%>"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="<%=require('../../assets/images/favicon/favicon-16x16.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="<%=require('../../assets/images/favicon/apple-icon-57x57.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="<%=require('../../assets/images/favicon/apple-icon-60x60.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="<%=require('../../assets/images/favicon/apple-icon-72x72.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="<%=require('../../assets/images/favicon/apple-icon-76x76.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="<%=require('../../assets/images/favicon/apple-icon-114x114.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="<%=require('../../assets/images/favicon/apple-icon-120x120.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="<%=require('../../assets/images/favicon/apple-icon-144x144.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="<%=require('../../assets/images/favicon/apple-icon-152x152.png')%>"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="<%=require('../../assets/images/favicon/apple-icon-180x180.png')%>"
-    /> -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ilya Shestakov" />
-
-    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
-    <!-- <meta name="author" content="Ilya Shestakov"> -->
     <title>Cleaning-X</title>
   </head>
   <body>
     <header class="header">
       <div class="header__content">
-        <a class="header__logo-link" href="index.html" title="go to main page">
+        <a class="header__logo-link" href="#" title="go to main page">
           <img
             class="header__logo-icon"
             src="<%=require('../../assets/icons/logo.svg')%>"
@@ -84,28 +23,39 @@
             loading="lazy"
           />
         </a>
-        <nav class="header__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="#" title="Home">Home</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="#" title="About">About</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="#" title="Services">Services</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="#" title="Pages">Pages</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="#" title="Contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-         <span class="header__cart">
-            Cart (<i class="header__cart-counter">0</i>)
-          </span>
+        <div class="header__navigation">
+          <nav class="navigation header__navigation-body">
+            <ul class="navigation__list">
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" title="Home">Home</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" title="About"
+                  >About</a
+                >
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" title="Services"
+                  >Services</a
+                >
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" title="Pages"
+                  >Pages</a
+                >
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" title="Contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <span class="header__cart">
+          Cart (<i class="header__cart-counter">0</i>)
+        </span>
+        <div class="header__buttons">
           <a
             class="button header__free-quote-button"
             href="#request-cleaning-form"
@@ -113,6 +63,8 @@
           >
             Get a free quote
           </a>
+          <button class="header__button-navigation" type="button"></button>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -342,7 +294,7 @@
                 role="button"
                 >Get a free quote</a
               >
-              <a class="about-covid__phone-link" href="tel:+14145672109">
+              <a class="about-covid__phone-link" href="tel:+14145672109" title="Phone">
                 <div class="info about-covid__phone-info">
                   <img
                     class="info__icon"
@@ -499,7 +451,7 @@
           </article>
         </div>
       </section>
-      <section class="request-cleaning">
+      <section class="request-cleaning" id="request-cleaning-form">
         <div class="request-cleaning__content">
           <div class="request-cleaning__main">
             <h2 class="request-cleaning__title">
@@ -509,7 +461,7 @@
               In dignissim euismod pretium amet enim a eu nam ut urna accumsan
               pellentesque lacus duis pharetra eutortor.
             </p>
-            <a class="request-cleaning__phone-link" href="tel:+14145672109">
+            <a class="request-cleaning__phone-link" href="tel:+14145672109" title="Phone">
               <div class="info request-cleaning__phone-info">
                 <img
                   class="info__icon"
@@ -542,7 +494,6 @@
           <form
             class="form"
             name="request-cleaning"
-            id="request-cleaning-form"
             method="post"
             action="console.log(data)"
           >
@@ -555,6 +506,7 @@
                   class="input-field__input"
                   type="text"
                   id="full-name"
+                  placeholder="Your name"
                   required
                 />
               </div>
@@ -566,7 +518,8 @@
                   class="input-field__input"
                   type="tel"
                   id="phone-number"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  pattern="\+?[0-9\s\-\(\)]+"
+                  placeholder="+1(414)567-2109"
                   required
                 />
               </div>
@@ -574,7 +527,12 @@
             <div class="form__row">
               <div class="form__input-field input-field">
                 <label class="input-field__label" for="address">Address</label>
-                <input class="input-field__input" type="text" id="address" />
+                <input
+                  class="input-field__input"
+                  type="text"
+                  id="address"
+                  placeholder="1827 Nickel Road, Los Angeles, CA, 90017, United States"
+                />
               </div>
               <div class="form__input-field input-field">
                 <label class="input-field__label" for="email">Email</label>
@@ -584,6 +542,7 @@
                   id="email"
                   pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   size="30"
+                  placeholder="sega@gmail.com"
                   required
                 />
               </div>
@@ -597,6 +556,7 @@
                   class="input-field__input"
                   type="text"
                   id="requested-service"
+                  placeholder="clean the whole house"
                 />
               </div>
               <div class="form__input-field input-field">
@@ -692,9 +652,9 @@
         </a>
         <p class="footer__copyright">
           Copyright &copy; Cleaning X | Designed by
-          <a class="footer__link" href="#" alt="d">BRIX Templates</a> - Powered
-          by <a class="footer__link" href="#" alt="d">Webflow</a> -
-          <a class="footer__link" href="#" alt="d">Licenses</a>
+          <a class="footer__link" href="#" title="BRIX Templates">BRIX Templates</a> - Powered
+          by <a class="footer__link" href="#" title="Webflow">Webflow</a> -
+          <a class="footer__link" href="#" title="Licenses">Licenses</a>
         </p>
       </div>
     </footer>

@@ -1,3 +1,8 @@
 import './index.scss';
+import Header from '../../scripts/Header';
 
-console.log('d');
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('.header');
+
+  new Header(header).init();
+});

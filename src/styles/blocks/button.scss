@@ -11,6 +11,14 @@
   cursor: pointer;
   width: fit-content;
 
+  &:hover {
+    box-shadow: 0 0 8px $color-purple;
+  }
+
+  &:active {
+    box-shadow: 0 0 4px $color-purple;
+  }
+
   &--transparent {
     background: transparent;
     border: 1px solid $color-gray-light;
@@ -19,7 +27,7 @@
     box-shadow: 0px 4px 10px $color-box-shadow;
   }
 
-  @media (max-width: map-get($grid-bps, sm)) {
+  @media (max-width: map-get($screens, sm)) {
     text-align: center;
     width: 100%;
   }

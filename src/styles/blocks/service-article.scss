@@ -24,7 +24,7 @@
   max-width: 312px;
 }
 
-@media (max-width: map-get($grid-bps, lg)) {
+@media (max-width: map-get($screens, lg)) {
   .service-article {
     padding: 24px 18px 16px;
   }
