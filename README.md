@@ -1,6 +1,4 @@
-# NewsExplorer
-
-project taken from https://www.frontendmentor.io
+# Cleaning-X
 
 ## tools:
 - HTML
