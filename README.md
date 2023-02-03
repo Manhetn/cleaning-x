@@ -18,7 +18,7 @@ _node.js and npm must be installed to work with the project_
 Copy the project to your computer:
 
 ```
-https://github.com/Manhetn/cleaning-x.git
+git clone https://github.com/Manhetn/cleaning-x.git
 ```
 
 Install Dependencies:
