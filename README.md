@@ -4,11 +4,11 @@ project taken from https://www.frontendmentor.io
 
 ## tools:
 - HTML
-- CSS
+- SCSS
 - JS
 - Webpack
 
-**Description:_** Easy project using HTML, CSS, vanilla JS
+**Description:_** Easy project using HTML, SCSS, vanilla JS
 
 # Demo:
 
